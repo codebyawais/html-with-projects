@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .table{
+        border: 2px solid black;
+        width: 1000px;
+        /* height: 50vh; */
+        border-collapse: collapse;
+    }
+    .heading{
+        text-align: center;
+    }
+    th{
+
+        border:  2px solid black;
+        width: 100px;
+        text-align: left;
+    }
+    td{
+        border: 2px solid black ;
+        width: 100px;
+        text-align: left;
+        /* max-width: 100px; */
+    }
+    input{
+        border: none;
+    }
+    input:hover{
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+
+
+</style>
+<body>
+
+
+
+    <h1 class="heading">Please fill this survey form</h1>
+   
+    <table class="table">
+         <!-- personal information section -->
+        <!-- <tr>
+            <th>First Name:</th>
+            <td><input type="text"></td>
+            <th>MI:</th>
+            <td><input type="text" name="" id=""></td>
+            <th>Last Name:</th>
+            <td><input type="text" name="" id=""></td>
+        </tr> -->
+
+        <tr>
+            <th>First Name:</th>
+            <td><input type="text"></td>
+            <th><label >MI:</label></th>
+            <td><input type="text"></td>
+            <th><label> Last Name:</label></th>
+            <td><input type="text"></td>
+        </tr>
+        <!-- address ing section -->
+        <tr>
+
+            <th><label> City:</label></th>
+            <td><input type="text" ></td>
+            <th><label for="">State:</label></th>
+            <td><input type="text" ></td>
+            <th><label for="">Zip Code:</label></th>
+            <td><input type="text"></td>
+        </tr>
+
+        <!-- sport info section -->
+        <tr>
+            <th colspan="6" >Choose a Sport </th>
+        </tr>
+
+        <tr>
+            <th colspan="6" > 
+                Basketball:<input checked type="radio" />
+                Football:<input type="radio" />
+                Hockey:<input type="radio" /></th>
+        </tr>
+
+
+<!--             
+         </tr> -->
+        <!-- <tr>
+            <td><span>Basketball: <input type="radio" name="" id="" ></span></td>
+            <td><span>Football: <input type="radio" name="" id="" ></span></td>
+            <td><span>Hockey: <input type="radio" name="" id="" ></span></td>
+            
+         </tr> -->
+        <tr>
+            <th colspan="6">Choose a year </th>
+        </tr>
+
+       <tr>
+        <th colspan="6">
+            Freshman: <input type="radio">
+            Sophomore: <input type="radio">
+            Junior:  <input type="radio">
+            Senior: <input type="radio">
+        </th>
+       </tr>
+
+        <!-- <tr>
+            <td><span>Freshman: <input type="radio" name="" id="" ></span></td>
+            <td><span>Sophomore: <input type="radio" name="" id="" ></span></td>
+            <td><span>Junior: <input type="radio" name="" id="" ></span></td>
+            <td><span>senior: <input type="radio" name="" id="" ></span></td>
+            
+         </tr> -->
+<tr>
+    <th colspan="6">Choose your favorite fast food</th>
+</tr>
+
+<tr>
+    <th  colspan="6">
+        <p>Chips</p>
+        <p>Pizza</p>
+        <p>Burger</p>
+    </th>
+</tr>
+<tr>
+    <td colspan="6"><select name="" id="">
+        <option value="">Chips</option>
+        <option value="">Pizza</option>
+        <option value="">Burger</option>
+    </select></td>
+</tr>
+
+
+
+
+<tr>
+   
+    <td colspan="6"><button>Send it</button>
+    <button>Clear it</button></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background-color: rgb(226, 246, 246);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+
+        .container {
+            width: 100%;
+            padding: 0px 20px;
+            padding-bottom: 10px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+        }
+
+        table {
+            min-width: 80vw;
+            border: 2px double black;
+            padding: 0px;
+            font-size: 20px;
+
+        }
+
+        tr {
+            height: 50px;
+            margin: 0px;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 16.6%;
+            border-collapse: collapse;
+        }
+
+        .padding-left {
+            padding-left: 20px;
+        }
+
+        th {
+            border: 1px solid black;
+            width: 16.6%;
+            border-collapse: collapse;
+            text-align: start;
+            padding-left: 20px;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+
+
+
+        }
+        .radio-section {
+            display: flex;
+            border: none;
+            position: absolute;
+        }
+
+        button {
+            padding: 7px;
+        }
+
+        button span {
+            border: 1px solid gray;
+            padding: 3px;
+            transition: all 0.5s linear;
+        }
+
+        button span:hover {
+            border-radius: 15px;
+            
+        }
+
+        .light-weight-text {
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;font-style: italic;">Please fill this survey form</h1>
+        <table>
+            <!-- PERSONAL INFO SECION -->
+            <tr>
+                <th><label>Firstname:</label></th>
+                <td><input type="text" /></td>
+                <th><label>MI:</label></th>
+                <td><input type="text" /></td>
+                <th><label>Last name:</label></th>
+                <td><input type="text" /></td>
+            </tr>
+            <!-- ADDRESS INFO SECION -->
+            <tr>
+                <th><label>City:</label> </th>
+                <td><input type="text" /></td>
+                <th><label>State:</label> </th>
+                <td><input type="text" /></td>
+                <th><label>Zip code:</label> </th>
+                <td><input type="text" /></td>
+            </tr>
+            <!-- SPORTS INFO SECION -->
+            <tr>
+                <th colspan="6">
+                    Choose a sport
+                </th>
+            </tr>
+            <tr>
+                <th colspan="6" class="radio-section light-weight-text" style=""> Basketball:<input checked
+                        type="radio" />Football:<input type="radio" />Hockey:<input type="radio" /></th>
+            </tr>
+            <!-- EXPERIENCE SECTION -->
+            <tr>
+                <th colspan="6">
+                    Choose a year
+                </th>
+            </tr>
+            <tr>
+
+                <th colspan="6" class="radio-section light-weight-text" style=""> Freshman:<input value=""
+                        type="radio" />Sophomore:<input type="radio" />Junior:<input type="radio" />Senior:<input
+                        type="radio" /></th>
+            </tr>
+              <!-- FOOD SECION -->
+            <tr>
+                <th colspan="6">
+                    Choose your favorite fast food
+                </th>
+            </tr>
+            <tr>
+                <th class="light-weight-text" colspan="6">
+                    <p>Chips</p>
+                    <p>Pizza</p>
+                    <p>Burger</p>
+                </th>
+            </tr>
+            <tr>
+                <th class="no-border" colspan="6"><button type="submit"><span>Send it</span></button><button
+                        style="margin-left: 50px;" type="reset"><span>Clear it</span></button></th>
+
+            </tr>
+
+
+        </table>
+    </div>
+
+</body>
+
+</html>
